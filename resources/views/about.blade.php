@@ -50,7 +50,7 @@
           <div class="aboutVideoSection__container__service">
             <img
               class="aboutVideoSection__container__service__icon"
-              src="./resources/assets/icons/breakfast.svg"
+              src="./assets/icons/breakfast.svg"
               alt="Service icon"
             />
             <h1 class="aboutVideoSection__container__service__title">
@@ -60,7 +60,7 @@
           <div class="aboutVideoSection__container__service">
             <img
               class="aboutVideoSection__container__service__icon"
-              src="./resources/assets/icons/airport.png"
+              src="./assets/icons/airport.png"
               alt="Service icon"
             />
             <h1 class="aboutVideoSection__container__service__title">
@@ -70,7 +70,7 @@
           <div class="aboutVideoSection__container__service">
             <img
               class="aboutVideoSection__container__service__icon"
-              src="./resources/assets/icons/city.svg"
+              src="./assets/icons/city.svg"
               alt="Service icon"
             />
             <h1 class="aboutVideoSection__container__service__title">
@@ -80,7 +80,7 @@
           <div class="aboutVideoSection__container__service--hide">
             <img
               class="aboutVideoSection__container__service__icon"
-              src="./resources/assets/icons/bbq.svg"
+              src="./assets/icons/bbq.svg"
               alt="Service icon"
             />
             <h1 class="aboutVideoSection__container__service__title">
@@ -90,7 +90,7 @@
           <div class="aboutVideoSection__container__service">
             <img
               class="aboutVideoSection__container__service__icon"
-              src="./resources/assets/icons/room.svg"
+              src="./assets/icons/room.svg"
               alt="Service icon"
             />
             <h1 class="aboutVideoSection__container__service__title">
@@ -103,7 +103,7 @@
       <!-- Restaurant Section -->
       <section class="restaurantSection">
         <img
-          src="./resources/assets/images/restaurant.jpg"
+          src="./assets/images/restaurant.jpg"
           alt="Restaurant picture"
           class="restaurantSection__img"
         />
@@ -132,7 +132,7 @@
               <div class="featuresSection__slides__container">
                 <img
                   class="featuresSection__slides__container--icon"
-                  src="./resources/assets/icons/rating.png"
+                  src="./assets/icons/rating.png"
                   alt="Rating icon"
                 />
                 <div
@@ -156,7 +156,7 @@
               <div class="featuresSection__slides__container">
                 <img
                   class="featuresSection__slides__container--icon"
-                  src="./resources/assets/icons/hours.png"
+                  src="./assets/icons/hours.png"
                   alt="Hours icon"
                 />
                 <div
@@ -180,7 +180,7 @@
               <div class="featuresSection__slides__container">
                 <img
                   class="featuresSection__slides__container--icon"
-                  src="./resources/assets/icons/location.png"
+                  src="./assets/icons/location.png"
                   alt="Location icon"
                 />
                 <div
@@ -204,7 +204,7 @@
               <div class="featuresSection__slides__container">
                 <img
                   class="featuresSection__slides__container--icon"
-                  src="./resources/assets/icons/cancellation.png"
+                  src="./assets/icons/cancellation.png"
                   alt="Cancellation icon"
                 />
                 <div
@@ -228,7 +228,7 @@
               <div class="featuresSection__slides__container">
                 <img
                   class="featuresSection__slides__container--icon"
-                  src="./resources/assets/icons/payment.png"
+                  src="./assets/icons/payment.png"
                   alt="Payment icon"
                 />
                 <div
@@ -252,7 +252,7 @@
               <div class="featuresSection__slides__container">
                 <img
                   class="featuresSection__slides__container--icon"
-                  src="./resources/assets/icons/offers.png"
+                  src="./assets/icons/offers.png"
                   alt="Offers icon"
                 />
                 <div
@@ -284,7 +284,7 @@
             >
               <img
                 class="featuresSection__container__slides__container--icon"
-                src="./resources/assets/icons/rating.png"
+                src="./assets/icons/rating.png"
                 alt="Rating icon"
               />
               <div
@@ -312,7 +312,7 @@
             <div class="featuresSection__container__slides__container">
               <img
                 class="featuresSection__container__slides__container--icon"
-                src="./resources/assets/icons/hours.png"
+                src="./assets/icons/hours.png"
                 alt="Hours icon"
               />
               <div
@@ -340,7 +340,7 @@
             <div class="featuresSection__container__slides__container">
               <img
                 class="featuresSection__container__slides__container--icon"
-                src="./resources/assets/icons/location.png"
+                src="./assets/icons/location.png"
                 alt="Location icon"
               />
               <div
@@ -368,7 +368,7 @@
             <div class="featuresSection__container__slides__container">
               <img
                 class="featuresSection__container__slides__container--icon"
-                src="./resources/assets/icons/cancellation.png"
+                src="./assets/icons/cancellation.png"
                 alt="Cancellation icon"
               />
               <div
@@ -396,7 +396,7 @@
             <div class="featuresSection__container__slides__container">
               <img
                 class="featuresSection__container__slides__container--icon"
-                src="./resources/assets/icons/payment.png"
+                src="./assets/icons/payment.png"
                 alt="Payment icon"
               />
               <div
@@ -424,7 +424,7 @@
             <div class="featuresSection__container__slides__container">
               <img
                 class="featuresSection__container__slides__container--icon"
-                src="./resources/assets/icons/offers.png"
+                src="./assets/icons/offers.png"
                 alt="Offers icon"
               />
               <div
@@ -456,7 +456,7 @@
         <div class="counterSection__container">
           <img
             class="counterSection__container__icon"
-            src="./resources/assets/icons/happy.svg"
+            src="./assets/icons/happy.svg"
             alt="Facts icon"
           />
           <div class="counterSection__container__subContainer">
@@ -469,14 +469,14 @@
           </div>
           <img
             class="counterSection__container__arrow"
-            src="./resources/assets/icons/arrow.svg"
+            src="./assets/icons/arrow.svg"
             alt="Facts icon"
           />
         </div>
         <div class="counterSection__container">
           <img
             class="counterSection__container__icon"
-            src="./resources/assets/icons/thumb.svg"
+            src="./assets/icons/thumb.svg"
             alt="Facts icon"
           />
           <div class="counterSection__container__subContainer">
@@ -487,14 +487,14 @@
           </div>
           <img
             class="counterSection__container__arrow"
-            src="./resources/assets/icons/arrow.svg"
+            src="./assets/icons/arrow.svg"
             alt="Facts icon"
           />
         </div>
         <div class="counterSection__container">
           <img
             class="counterSection__container__icon"
-            src="./resources/assets/icons/world.svg"
+            src="./assets/icons/world.svg"
             alt="Facts icon"
           />
           <div class="counterSection__container__subContainer">
@@ -505,7 +505,7 @@
           </div>
           <img
             class="counterSection__container__arrow"
-            src="./resources/assets/icons/arrow.svg"
+            src="./assets/icons/arrow.svg"
             alt="Facts icon"
           />
         </div>
@@ -514,14 +514,14 @@
             <div class="swiper-slide">
               <img
                 class="swiperMenuImages__img"
-                src="./resources/assets/images/reception.jpg"
+                src="./assets/images/reception.jpg"
                 alt="Reception image"
               />
             </div>
             <div class="swiper-slide">
               <img
                 class="swiperMenuImages__img"
-                src="./resources/assets/images/reception2.jpg"
+                src="./assets/images/reception2.jpg"
                 alt="Reception image"
               />
             </div>
@@ -531,12 +531,12 @@
         <div class="menuSection__imagesDesktop">
           <img
             class="swiperMenuImages__img"
-            src="./resources/assets/images/reception.jpg"
+            src="./assets/images/reception.jpg"
             alt="Reception image"
           />
           <img
             class="swiperMenuImages__img"
-            src="./resources/assets/images/reception2.jpg"
+            src="./assets/images/reception2.jpg"
             alt="Reception image"
           />
         </div>
@@ -550,8 +550,8 @@
 
 @section('scripts')
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script type="module" src="./resources/js/index.js"></script>
-    <script type="module" src="./resources/js/mobile-menu.js"></script>
+<script type="module" src="{{asset("js/index.js")}}"></script>
+    <script type="module" src="{{asset("js/mobile-menu.js")}}></script>
     @endsection
 </body>
 

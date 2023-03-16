@@ -100,19 +100,19 @@
           <div class="aboutSection__cards__team">
             <img
               class="aboutSection__cards__team--img"
-              src="./resources/assets/images/strongTeam.jpeg"
+              src="./assets/images/strongTeam.jpeg"
               alt="Strong team work"
             />
             <div class="aboutSection__cards__team--container">
               <div class="aboutSection__cards__team--container--icons">
                 <img
                   class="aboutSection__cards__team--container--icons--small"
-                  src="./resources/assets/icons/team.png"
+                  src="./assets/icons/team.png"
                   alt="Small team icon"
                 />
                 <img
                   class="aboutSection__cards__team--container--icons--big"
-                  src="./resources/assets/icons/teamBig.png"
+                  src="./assets/icons/teamBig.png"
                   alt="Big team icon"
                 />
               </div>
@@ -128,14 +128,14 @@
           <div class="aboutSection__cards__room">
             <img
               class="aboutSection__cards__room--img"
-              src="./resources/assets/images/room.jpeg"
+              src="./assets/images/room.jpeg"
               alt="Hotel Room"
             />
             <div class="aboutSection__cards__room--container">
               <div class="aboutSection__cards__room--container--icons">
                 <img
                   class="aboutSection__cards__room--container--icons--small"
-                  src="./resources/assets/icons/calendar.png"
+                  src="./assets/icons/calendar.png"
                   alt="Calendar icon"
                 />
               </div>
@@ -161,29 +161,29 @@
             <div class="swiper-slide">
               <img
                 class="roomSlider__slides--extras"
-                src="./resources/assets/images/roomExtras.png"
+                src="./assets/images/roomExtras.png"
                 alt="Room extras"
               />
-              @if ($room["photo"] === "")
+              @if ($room->photo === "")
               <img
                 class="roomSlider__slides--roomImg"
                 src="https://mktmarketingdigital.com/wp-content/plugins/elementor/assets/images/placeholder.png"
                 alt="Hotel room"
               />
               @endif
-              @if ($room["photo"] !== "")
+              @if ($room->photo !== "")
               <img
                 class="roomSlider__slides--roomImg"
-                src={{$room["photo"]}}
+                src={{$room->photo}}
                 alt="Hotel room"
               />
               @endif
-              <h1 class="roomSlider__slides--title">{{$room["bed_type"]}}</h1>
+              <h1 class="roomSlider__slides--title">{{$room->bed_type}}</h1>
               <p class="roomSlider__slides--description">
-              {{$room["description"]}}
+              {{$room->description}}
               </p>
               <p class="roomSlider__slides--price">
-              ${{$room["room_rate"] /100}}<span class="roomSlider__slides--price--perNight"
+              ${{$room->room_rate /100}}<span class="roomSlider__slides--price--perNight"
                   >/Night</span
                 >
               </p>
@@ -229,12 +229,12 @@
               <div class="featuresSection__slides__container">
                 <img
                   class="featuresSection__slides__container--icon"
-                  src="./resources/assets/icons/rating.png"
+                  src="./assets/icons/rating.png"
                   alt="Rating icon"
                 />
                 <img
                   class="featuresSection__slides__container--number"
-                  src="./resources/assets/icons/01.png"
+                  src="./assets/icons/01.png"
                   alt="Number one"
                 />
               </div>
@@ -249,12 +249,12 @@
               <div class="featuresSection__slides__container">
                 <img
                   class="featuresSection__slides__container--icon"
-                  src="./resources/assets/icons/hours.png"
+                  src="./assets/icons/hours.png"
                   alt="Hours icon"
                 />
                 <img
                   class="featuresSection__slides__container--number"
-                  src="./resources/assets/icons/02.png"
+                  src="./assets/icons/02.png"
                   alt="Number tow"
                 />
               </div>
@@ -269,12 +269,12 @@
               <div class="featuresSection__slides__container">
                 <img
                   class="featuresSection__slides__container--icon"
-                  src="./resources/assets/icons/location.png"
+                  src="./assets/icons/location.png"
                   alt="Location icon"
                 />
                 <img
                   class="featuresSection__slides__container--number"
-                  src="./resources/assets/icons/03.png"
+                  src="./assets/icons/03.png"
                   alt="Number three"
                 />
               </div>
@@ -289,12 +289,12 @@
               <div class="featuresSection__slides__container">
                 <img
                   class="featuresSection__slides__container--icon"
-                  src="./resources/assets/icons/cancellation.png"
+                  src="./assets/icons/cancellation.png"
                   alt="Cancellation icon"
                 />
                 <img
                   class="featuresSection__slides__container--number"
-                  src="./resources/assets/icons/04.png"
+                  src="./assets/icons/04.png"
                   alt="Number four"
                 />
               </div>
@@ -309,12 +309,12 @@
               <div class="featuresSection__slides__container">
                 <img
                   class="featuresSection__slides__container--icon"
-                  src="./resources/assets/icons/payment.png"
+                  src="./assets/icons/payment.png"
                   alt="Payment icon"
                 />
                 <img
                   class="featuresSection__slides__container--number"
-                  src="./resources/assets/icons/05.png"
+                  src="./assets/icons/05.png"
                   alt="Number five"
                 />
               </div>
@@ -329,12 +329,12 @@
               <div class="featuresSection__slides__container">
                 <img
                   class="featuresSection__slides__container--icon"
-                  src="./resources/assets/icons/offers.png"
+                  src="./assets/icons/offers.png"
                   alt="Offers icon"
                 />
                 <img
                   class="featuresSection__slides__container--number"
-                  src="./resources/assets/icons/06.png"
+                  src="./assets/icons/06.png"
                   alt="Number six"
                 />
               </div>
@@ -353,12 +353,12 @@
             <div class="featuresSection__container__slides__container">
               <img
                 class="featuresSection__container__slides__container--icon"
-                src="./resources/assets/icons/rating.png"
+                src="./assets/icons/rating.png"
                 alt="Rating icon"
               />
               <img
                 class="featuresSection__container__slides__container--number"
-                src="./resources/assets/icons/01.png"
+                src="./assets/icons/01.png"
                 alt="Number one"
               />
             </div>
@@ -375,12 +375,12 @@
             <div class="featuresSection__container__slides__container">
               <img
                 class="featuresSection__container__slides__container--icon"
-                src="./resources/assets/icons/hours.png"
+                src="./assets/icons/hours.png"
                 alt="Hours icon"
               />
               <img
                 class="featuresSection__container__slides__container--number"
-                src="./resources/assets/icons/02.png"
+                src="./assets/icons/02.png"
                 alt="Number tow"
               />
             </div>
@@ -397,12 +397,12 @@
             <div class="featuresSection__container__slides__container">
               <img
                 class="featuresSection__container__slides__container--icon"
-                src="./resources/assets/icons/location.png"
+                src="./assets/icons/location.png"
                 alt="Location icon"
               />
               <img
                 class="featuresSection__container__slides__container--number"
-                src="./resources/assets/icons/03.png"
+                src="./assets/icons/03.png"
                 alt="Number three"
               />
             </div>
@@ -419,12 +419,12 @@
             <div class="featuresSection__container__slides__container">
               <img
                 class="featuresSection__container__slides__container--icon"
-                src="./resources/assets/icons/cancellation.png"
+                src="./assets/icons/cancellation.png"
                 alt="Cancellation icon"
               />
               <img
                 class="featuresSection__container__slides__container--number"
-                src="./resources/assets/icons/04.png"
+                src="./assets/icons/04.png"
                 alt="Number four"
               />
             </div>
@@ -441,12 +441,12 @@
             <div class="featuresSection__container__slides__container">
               <img
                 class="featuresSection__container__slides__container--icon"
-                src="./resources/assets/icons/payment.png"
+                src="./assets/icons/payment.png"
                 alt="Payment icon"
               />
               <img
                 class="featuresSection__container__slides__container--number"
-                src="./resources/assets/icons/05.png"
+                src="./assets/icons/05.png"
                 alt="Number five"
               />
             </div>
@@ -463,12 +463,12 @@
             <div class="featuresSection__container__slides__container">
               <img
                 class="featuresSection__container__slides__container--icon"
-                src="./resources/assets/icons/offers.png"
+                src="./assets/icons/offers.png"
                 alt="Offers icon"
               />
               <img
                 class="featuresSection__container__slides__container--number"
-                src="./resources/assets/icons/06.png"
+                src="./assets/icons/06.png"
                 alt="Number six"
               />
             </div>
@@ -489,7 +489,7 @@
         <div class="wrapper">
           <img
             class="menuSection__icon"
-            src="./resources/assets/icons/food.png"
+            src="./assets/icons/food.png"
             alt="Food icon"
           />
           <p class="menuSection__subtitle">MENU</p>
@@ -501,7 +501,7 @@
                   <div class="menuSection__slides__part1__container">
                     <img
                       class="menuSection__slides__part1__container--icon"
-                      src="./resources/assets/images/food1.jpg"
+                      src="./assets/images/food1.jpg"
                       alt="Food image"
                     />
                   </div>
@@ -518,7 +518,7 @@
                   </div>
                   <img
                     class="menuSection__slides__part1--arrow"
-                    src="./resources/assets/icons/goldenArrow.png"
+                    src="./assets/icons/goldenArrow.png"
                     alt="Golden arrow"
                   />
                 </div>
@@ -526,7 +526,7 @@
                   <div class="menuSection__slides__part2__container">
                     <img
                       class="menuSection__slides__part2__container--icon"
-                      src="./resources/assets/images/food2.jpg"
+                      src="./assets/images/food2.jpg"
                       alt="Food image"
                     />
                   </div>
@@ -543,7 +543,7 @@
                   </div>
                   <img
                     class="menuSection__slides__part2--arrow"
-                    src="./resources/assets/icons/goldenArrow.png"
+                    src="./assets/icons/goldenArrow.png"
                     alt="Golden arrow"
                   />
                 </div>
@@ -551,7 +551,7 @@
                   <div class="menuSection__slides__part3__container">
                     <img
                       class="menuSection__slides__part3__container--icon"
-                      src="./resources/assets/images/food3.jpg"
+                      src="./assets/images/food3.jpg"
                       alt="Food image"
                     />
                   </div>
@@ -568,7 +568,7 @@
                   </div>
                   <img
                     class="menuSection__slides__part3--arrow"
-                    src="./resources/assets/icons/goldenArrow.png"
+                    src="./assets/icons/goldenArrow.png"
                     alt="Golden arrow"
                   />
                 </div>
@@ -578,7 +578,7 @@
                   <div class="menuSection__slides__part1__container">
                     <img
                       class="menuSection__slides__part1__container--icon"
-                      src="./resources/assets/images/food4.jpg"
+                      src="./assets/images/food4.jpg"
                       alt="Food image"
                     />
                   </div>
@@ -595,7 +595,7 @@
                   </div>
                   <img
                     class="menuSection__slides__part1--arrow"
-                    src="./resources/assets/icons/goldenArrow.png"
+                    src="./assets/icons/goldenArrow.png"
                     alt="Golden arrow"
                   />
                 </div>
@@ -603,7 +603,7 @@
                   <div class="menuSection__slides__part2__container">
                     <img
                       class="menuSection__slides__part2__container--icon"
-                      src="./resources/assets/images/food5.jpg"
+                      src="./assets/images/food5.jpg"
                       alt="Food image"
                     />
                   </div>
@@ -620,7 +620,7 @@
                   </div>
                   <img
                     class="menuSection__slides__part2--arrow"
-                    src="./resources/assets/icons/goldenArrow.png"
+                    src="./assets/icons/goldenArrow.png"
                     alt="Golden arrow"
                   />
                 </div>
@@ -628,7 +628,7 @@
                   <div class="menuSection__slides__part3__container">
                     <img
                       class="menuSection__slides__part3__container--icon"
-                      src="./resources/assets/images/food6.jpg"
+                      src="./assets/images/food6.jpg"
                       alt="Food image"
                     />
                   </div>
@@ -645,7 +645,7 @@
                   </div>
                   <img
                     class="menuSection__slides__part3--arrow"
-                    src="./resources/assets/icons/goldenArrow.png"
+                    src="./assets/icons/goldenArrow.png"
                     alt="Golden arrow"
                   />
                 </div>
@@ -655,7 +655,7 @@
                   <div class="menuSection__slides__part1__container">
                     <img
                       class="menuSection__slides__part1__container--icon"
-                      src="./resources/assets/images/food7.jpg"
+                      src="./assets/images/food7.jpg"
                       alt="Food image"
                     />
                   </div>
@@ -672,7 +672,7 @@
                   </div>
                   <img
                     class="menuSection__slides__part1--arrow"
-                    src="./resources/assets/icons/goldenArrow.png"
+                    src="./assets/icons/goldenArrow.png"
                     alt="Golden arrow"
                   />
                 </div>
@@ -680,7 +680,7 @@
                   <div class="menuSection__slides__part2__container">
                     <img
                       class="menuSection__slides__part2__container--icon"
-                      src="./resources/assets/images/food8.jpg"
+                      src="./assets/images/food8.jpg"
                       alt="Food image"
                     />
                   </div>
@@ -697,7 +697,7 @@
                   </div>
                   <img
                     class="menuSection__slides__part2--arrow"
-                    src="./resources/assets/icons/goldenArrow.png"
+                    src="./assets/icons/goldenArrow.png"
                     alt="Golden arrow"
                   />
                 </div>
@@ -705,7 +705,7 @@
                   <div class="menuSection__slides__part3__container">
                     <img
                       class="menuSection__slides__part3__container--icon"
-                      src="./resources/assets/images/food9.jpg"
+                      src="./assets/images/food9.jpg"
                       alt="Food image"
                     />
                   </div>
@@ -722,7 +722,7 @@
                   </div>
                   <img
                     class="menuSection__slides__part3--arrow"
-                    src="./resources/assets/icons/goldenArrow.png"
+                    src="./assets/icons/goldenArrow.png"
                     alt="Golden arrow"
                   />
                 </div>
@@ -736,21 +736,21 @@
               <div class="swiper-slide">
                 <img
                   class="swiperMenuImages__img"
-                  src="./resources/assets/images/foodImg1.jpg"
+                  src="./assets/images/foodImg1.jpg"
                   alt="Food image"
                 />
               </div>
               <div class="swiper-slide">
                 <img
                   class="swiperMenuImages__img"
-                  src="./resources/assets/images/foodImg2.jpg"
+                  src="./assets/images/foodImg2.jpg"
                   alt="Food image"
                 />
               </div>
               <div class="swiper-slide">
                 <img
                   class="swiperMenuImages__img"
-                  src="./resources/assets/images/foodImg3.jpg"
+                  src="./assets/images/foodImg3.jpg"
                   alt="Food image"
                 />
               </div>
@@ -760,17 +760,17 @@
           <div class="menuSection__imagesDesktop">
             <img
               class="swiperMenuImages__img"
-              src="./resources/assets/images/foodImg1.jpg"
+              src="./assets/images/foodImg1.jpg"
               alt="Food image"
             />
             <img
               class="swiperMenuImages__img"
-              src="./resources/assets/images/foodImg2.jpg"
+              src="./assets/images/foodImg2.jpg"
               alt="Food image"
             />
             <img
               class="swiperMenuImages__img"
-              src="./resources/assets/images/foodImg3.jpg"
+              src="./assets/images/foodImg3.jpg"
               alt="Food image"
             />
           </div>
@@ -781,7 +781,7 @@
       <section class="statsSection">
         <div class="statsSection__container">
           <div class="statsSection__container__stat">
-            <img src="./resources/assets/icons/iconStat1.png" alt="Stat icon" />
+            <img src="./assets/icons/iconStat1.png" alt="Stat icon" />
             <h1 class="statsSection__container__stat__title">
               84k<span class="statsSection__container__stat__title--span"
                 >+</span
@@ -792,7 +792,7 @@
             </p>
           </div>
           <div class="statsSection__container__stat">
-            <img src="./resources/assets/icons/iconStat2.png" alt="Stat icon" />
+            <img src="./assets/icons/iconStat2.png" alt="Stat icon" />
             <h1 class="statsSection__container__stat__title">
               10M<span class="statsSection__container__stat__title--span"
                 >+</span
@@ -803,7 +803,7 @@
             </p>
           </div>
           <div class="statsSection__container__stat">
-            <img src="./resources/assets/icons/iconStat3.png" alt="Stat icon" />
+            <img src="./assets/icons/iconStat3.png" alt="Stat icon" />
             <h1 class="statsSection__container__stat__title">
               02k<span class="statsSection__container__stat__title--span"
                 >+</span
@@ -814,7 +814,7 @@
             </p>
           </div>
           <div class="statsSection__container__stat">
-            <img src="./resources/assets/icons/iconStat4.png" alt="Stat icon" />
+            <img src="./assets/icons/iconStat4.png" alt="Stat icon" />
             <h1 class="statsSection__container__stat__title">
               100M<span class="statsSection__container__stat__title--span"
                 >+</span

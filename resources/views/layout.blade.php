@@ -33,7 +33,7 @@
             <div class="nav__container__menu nav__container__menu--burger">
               <img
                 id="mobileMenuBurguer"
-                src="./resources/assets/icons/menu.svg"
+                src="./assets/icons/menu.svg"
                 alt="Menu icon"
               />
             </div>
@@ -43,31 +43,31 @@
               >
                 <span>H</span>
               </div>
-              <a href="./index.php">
+              <a href="{{ url('/index') }}">
                 <img
                   class="nav__container__menu--logo nav__container__menu--logo--title"
-                  src="./resources/assets/icons/Hotel Miranda.svg"
+                  src="./assets/icons/Hotel Miranda.svg"
                   alt="Hotel Title"
                 />
               </a>
             </div>
           </div>
           <div class="nav__menu">
-            <a href="./about.php" class="nav__item">About Us</a>
-            <a href="./rooms.php" class="nav__item">Rooms</a>
-            <a href="./offers.php" class="nav__item">Offers</a>
-            <a href="./contact.php" class="nav__item">Contact</a>
+            <a href="{{ url('/about') }}" class="nav__item">About Us</a>
+            <a href="{{ url('/rooms') }}" class="nav__item">Rooms</a>
+            <a href="{{ url('/offers') }}" class="nav__item">Offers</a>
+            <a href="{{ url('/contact') }}" class="nav__item">Contact</a>
           </div>
           <div>
             <div class="nav__container nav__container__functionalities">
               <img
                 class="nav__container__functionalities--person"
-                src="./resources/assets/icons/person.png"
+                src="./assets/icons/person.png"
                 alt="User icon"
               />
               <img
                 class="nav__container__functionalities--search"
-                src="./resources/assets/icons/search.png"
+                src="./assets/icons/search.png"
                 alt="Search icon"
               />
             </div>
@@ -87,7 +87,7 @@
           <div class="footer__container1__subcontainer1__header">
             <h1>H</h1>
             <img
-              src="./resources/assets/icons/Hotel Miranda.svg"
+              src="./assets/icons/Hotel Miranda.svg"
               alt="Hotel name"
             />
           </div>
@@ -213,7 +213,7 @@
             <div class="footer__container1__subcontainer3__contact__one">
               <img
                 class="footer__container1__subcontainer3__contact__one__icon"
-                src="./resources/assets/icons/contactIcon1.png"
+                src="./assets/icons/contactIcon1.png"
                 alt="Contact icon"
               />
               <div
@@ -234,7 +234,7 @@
             <div class="footer__container1__subcontainer3__contact__one">
               <img
                 class="footer__container1__subcontainer3__contact__one__icon"
-                src="./resources/assets/icons/contactIcon2.png"
+                src="./assets/icons/contactIcon2.png"
                 alt="Contact icon"
               />
               <div
@@ -255,7 +255,7 @@
             <div class="footer__container1__subcontainer3__contact__one">
               <img
                 class="footer__container1__subcontainer3__contact__one__icon"
-                src="./resources/assets/icons/contactIcon3.png"
+                src="./assets/icons/contactIcon3.png"
                 alt="Contact icon"
               />
               <div

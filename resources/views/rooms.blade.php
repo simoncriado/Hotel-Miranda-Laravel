@@ -38,10 +38,10 @@
             <div style="position: relative">
               <img
                 class="roomSlider__slides--extras"
-                src="./resources/assets/images/roomExtras.png"
+                src="./assets/images/roomExtras.png"
                 alt="Room extras"
               />
-              @if (strpos($room["photo"], 'http') === false)
+              @if (strpos($room->photo, 'http') === false)
               <img
                 class="roomSlider__slides--roomImg"
                 src="https://mktmarketingdigital.com/wp-content/plugins/elementor/assets/images/placeholder.png"
@@ -50,23 +50,23 @@
               @else
               <img
                 class="roomSlider__slides--roomImg"
-                src={{$room["photo"]}}
+                src={{$room->photo}}
                 alt="Hotel room"
               />
               @endif
-              <h1 class="roomSlider__slides--title">{{$room["bed_type"]}}</h1>
+              <h1 class="roomSlider__slides--title">{{$room->bed_type}}</h1>
               <p class="roomSlider__slides--description">
-              {{$room["description"]}}
+              {{$room->description}}
               </p>
               <div class="roomSlider__slides__container">
                 <p class="roomSlider__slides__container--price">
-                  ${{$room["room_rate"] /100}}<span
+                  ${{$room->room_rate /100}}<span
                     class="roomSlider__slides__container--price--perNight"
                     >/Night</span
                   >
                 </p>
                 <a
-                  href="./room-details.php?id={{$room["id"]}}"
+                  href="{{ url('./room-details/' . $room->id) }}"
                   class="roomSlider__slides__container--bookNow"
                   >Book now</a
                 >
@@ -85,8 +85,8 @@
 
     @section('scripts')
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script type="module" src="./resources/js/index.js"></script>
-    <script type="module" src="./resources/js/mobile-menu.js"></script>
+    <script type="module" src="{{asset("js/index.js")}}"></script>
+    <script type="module" src="{{asset("js/mobile-menu.js")}}></script>
     @endsection
 
     </body>

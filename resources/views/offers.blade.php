@@ -33,16 +33,16 @@
         @foreach ($rooms as $room)
         <div class="offerRoomSection__room">
           <div class="offerRoomSection__room__priceContainer">
-            <p class="offerRoomSection__room__priceContainer--gold">${{$room["room_rate"] /100}}</p>
+            <p class="offerRoomSection__room__priceContainer--gold">${{$room->room_rate /100}}</p>
             <p class="offerRoomSection__room__priceContainer--perNightGold">
               /Night
             </p>
-            <p class="offerRoomSection__room__priceContainer--red">${{$room["room_offer"] /100}}</p>
+            <p class="offerRoomSection__room__priceContainer--red">${{$room->room_offer /100}}</p>
             <p class="offerRoomSection__room__priceContainer--perNightRed">
               /Night
             </p>
           </div>
-          @if (strpos($room["photo"], 'http') === false)
+          @if (strpos($room->photo, 'http') === false)
               <img
                 class="offerRoomSection__room__img"
                 src="https://mktmarketingdigital.com/wp-content/plugins/elementor/assets/images/placeholder.png"
@@ -51,7 +51,7 @@
               @else
               <img
                 class="offerRoomSection__room__img"
-                src={{$room["photo"]}}
+                src={{$room->photo}}
                 alt="Hotel room"
               />
               @endif
@@ -62,7 +62,7 @@
               <p
                 class="offerRoomSection__room__bigContainer__priceContainerDesktop--gold"
               >
-              ${{$room["room_rate"] /100}}
+              ${{$room->room_rate /100}}
               </p>
               <p
                 class="offerRoomSection__room__bigContainer__priceContainerDesktop--perNightGold"
@@ -72,7 +72,7 @@
               <p
                 class="offerRoomSection__room__bigContainer__priceContainerDesktop--red"
               >
-              ${{$room["room_offer"] /100}}
+              ${{$room->room_offer /100}}
               </p>
               <p
                 class="offerRoomSection__room__bigContainer__priceContainerDesktop--perNightRed"
@@ -84,14 +84,14 @@
             UNIQUE EXPERIENCE
             </p>
             <h1 class="offerRoomSection__room__bigContainer__title">
-            {{$room["bed_type"]}}
+            {{$room->bed_type}}
             </h1>
             <div class="offerRoomSection__room__bigContainer__separation"></div>
             <div class="offerRoomSection__room__bigContainer__smallContainer">
               <p
                 class="offerRoomSection__room__bigContainer__smallContainer__description"
               >
-              {{$room["description"]}}
+              {{$room->description}}
               </p>
               <div
                 class="offerRoomSection__room__bigContainer__smallContainer__amenitiesContainer"
@@ -99,7 +99,7 @@
                 <div class="amenitiesSection__container__subcontainer">
                   <img
                     class="amenitiesSection__container__subcontainer__img"
-                    src="./resources/assets/icons/1amenity-airconditioning.png"
+                    src="./assets/icons/1amenity-airconditioning.png"
                     alt="Amenity icon"
                   />
                   <p class="amenitiesSection__container__subcontainer__text">
@@ -109,7 +109,7 @@
                 <div class="amenitiesSection__container__subcontainer">
                   <img
                     class="amenitiesSection__container__subcontainer__img"
-                    src="./resources/assets/icons/2amenity-wifi.png"
+                    src="./assets/icons/2amenity-wifi.png"
                     alt="Amenity icon"
                   />
                   <p class="amenitiesSection__container__subcontainer__text">
@@ -119,7 +119,7 @@
                 <div class="amenitiesSection__container__subcontainer">
                   <img
                     class="amenitiesSection__container__subcontainer__img"
-                    src="./resources/assets/icons/3amenity-breakfast.png"
+                    src="./assets/icons/3amenity-breakfast.png"
                     alt="Amenity icon"
                   />
                   <p class="amenitiesSection__container__subcontainer__text">
@@ -129,7 +129,7 @@
                 <div class="amenitiesSection__container__subcontainer">
                   <img
                     class="amenitiesSection__container__subcontainer__img"
-                    src="./resources/assets/icons/4amenity-kitchen.png"
+                    src="./assets/icons/4amenity-kitchen.png"
                     alt="Amenity icon"
                   />
                   <p class="amenitiesSection__container__subcontainer__text">
@@ -139,7 +139,7 @@
                 <div class="amenitiesSection__container__subcontainer">
                   <img
                     class="amenitiesSection__container__subcontainer__img"
-                    src="./resources/assets/icons/5amenity-cleaning.png"
+                    src="./assets/icons/5amenity-cleaning.png"
                     alt="Amenity icon"
                   />
                   <p class="amenitiesSection__container__subcontainer__text">
@@ -149,7 +149,7 @@
                 <div class="amenitiesSection__container__subcontainer">
                   <img
                     class="amenitiesSection__container__subcontainer__img"
-                    src="./resources/assets/icons/6amenity-shower.png"
+                    src="./assets/icons/6amenity-shower.png"
                     alt="Amenity icon"
                   />
                   <p class="amenitiesSection__container__subcontainer__text">
@@ -159,7 +159,7 @@
                 <div class="amenitiesSection__container__subcontainer">
                   <img
                     class="amenitiesSection__container__subcontainer__img"
-                    src="./resources/assets/icons/7amenity-grocery.png"
+                    src="./assets/icons/7amenity-grocery.png"
                     alt="Amenity icon"
                   />
                   <p class="amenitiesSection__container__subcontainer__text">
@@ -169,7 +169,7 @@
                 <div class="amenitiesSection__container__subcontainer">
                   <img
                     class="amenitiesSection__container__subcontainer__img"
-                    src="./resources/assets/icons/8amenity-bed.png"
+                    src="./assets/icons/8amenity-bed.png"
                     alt="Amenity icon"
                   />
                   <p class="amenitiesSection__container__subcontainer__text">
@@ -179,7 +179,7 @@
                 <div class="amenitiesSection__container__subcontainer">
                   <img
                     class="amenitiesSection__container__subcontainer__img"
-                    src="./resources/assets/icons/9amenity-shop.png"
+                    src="./assets/icons/9amenity-shop.png"
                     alt="Amenity icon"
                   />
                   <p class="amenitiesSection__container__subcontainer__text">
@@ -189,7 +189,7 @@
                 <div class="amenitiesSection__container__subcontainer">
                   <img
                     class="amenitiesSection__container__subcontainer__img"
-                    src="./resources/assets/icons/10amenity-towels.png"
+                    src="./assets/icons/10amenity-towels.png"
                     alt="Amenity icon"
                   />
                   <p class="amenitiesSection__container__subcontainer__text">
@@ -197,7 +197,7 @@
                   </p>
                 </div>
               </div>
-              <a href="./room-details.php?id={{$room["id"]}}" class="btn">BOOK NOW</a>
+              <a href="./room-details.php?id={{$room->id}}" class="btn">BOOK NOW</a>
             </div>
           </div>
         </div>
@@ -216,7 +216,7 @@
           </div>
           <img
             class="offerRoomSection__room__img"
-            src="./resources/assets/images/room2.jpg"
+            src="./assets/images/room2.jpg"
             alt="Room image"
           />
           <div class="offerRoomSection__room__bigContainer">
@@ -268,7 +268,7 @@
                 <div class="amenitiesSection__container__subcontainer">
                   <img
                     class="amenitiesSection__container__subcontainer__img"
-                    src="./resources/assets/icons/1amenity-airconditioning.png"
+                    src="./assets/icons/1amenity-airconditioning.png"
                     alt="Amenity icon"
                   />
                   <p class="amenitiesSection__container__subcontainer__text">
@@ -278,7 +278,7 @@
                 <div class="amenitiesSection__container__subcontainer">
                   <img
                     class="amenitiesSection__container__subcontainer__img"
-                    src="./resources/assets/icons/2amenity-wifi.png"
+                    src="./assets/icons/2amenity-wifi.png"
                     alt="Amenity icon"
                   />
                   <p class="amenitiesSection__container__subcontainer__text">
@@ -288,7 +288,7 @@
                 <div class="amenitiesSection__container__subcontainer">
                   <img
                     class="amenitiesSection__container__subcontainer__img"
-                    src="./resources/assets/icons/3amenity-breakfast.png"
+                    src="./assets/icons/3amenity-breakfast.png"
                     alt="Amenity icon"
                   />
                   <p class="amenitiesSection__container__subcontainer__text">
@@ -298,7 +298,7 @@
                 <div class="amenitiesSection__container__subcontainer">
                   <img
                     class="amenitiesSection__container__subcontainer__img"
-                    src="./resources/assets/icons/4amenity-kitchen.png"
+                    src="./assets/icons/4amenity-kitchen.png"
                     alt="Amenity icon"
                   />
                   <p class="amenitiesSection__container__subcontainer__text">
@@ -308,7 +308,7 @@
                 <div class="amenitiesSection__container__subcontainer">
                   <img
                     class="amenitiesSection__container__subcontainer__img"
-                    src="./resources/assets/icons/5amenity-cleaning.png"
+                    src="./assets/icons/5amenity-cleaning.png"
                     alt="Amenity icon"
                   />
                   <p class="amenitiesSection__container__subcontainer__text">
@@ -318,7 +318,7 @@
                 <div class="amenitiesSection__container__subcontainer">
                   <img
                     class="amenitiesSection__container__subcontainer__img"
-                    src="./resources/assets/icons/6amenity-shower.png"
+                    src="./assets/icons/6amenity-shower.png"
                     alt="Amenity icon"
                   />
                   <p class="amenitiesSection__container__subcontainer__text">
@@ -328,7 +328,7 @@
                 <div class="amenitiesSection__container__subcontainer">
                   <img
                     class="amenitiesSection__container__subcontainer__img"
-                    src="./resources/assets/icons/7amenity-grocery.png"
+                    src="./assets/icons/7amenity-grocery.png"
                     alt="Amenity icon"
                   />
                   <p class="amenitiesSection__container__subcontainer__text">
@@ -338,7 +338,7 @@
                 <div class="amenitiesSection__container__subcontainer">
                   <img
                     class="amenitiesSection__container__subcontainer__img"
-                    src="./resources/assets/icons/8amenity-bed.png"
+                    src="./assets/icons/8amenity-bed.png"
                     alt="Amenity icon"
                   />
                   <p class="amenitiesSection__container__subcontainer__text">
@@ -348,7 +348,7 @@
                 <div class="amenitiesSection__container__subcontainer">
                   <img
                     class="amenitiesSection__container__subcontainer__img"
-                    src="./resources/assets/icons/9amenity-shop.png"
+                    src="./assets/icons/9amenity-shop.png"
                     alt="Amenity icon"
                   />
                   <p class="amenitiesSection__container__subcontainer__text">
@@ -358,7 +358,7 @@
                 <div class="amenitiesSection__container__subcontainer">
                   <img
                     class="amenitiesSection__container__subcontainer__img"
-                    src="./resources/assets/icons/10amenity-towels.png"
+                    src="./assets/icons/10amenity-towels.png"
                     alt="Amenity icon"
                   />
                   <p class="amenitiesSection__container__subcontainer__text">
@@ -383,7 +383,7 @@
           </div>
           <img
             class="offerRoomSection__room__img"
-            src="./resources/assets/images/room3.jpg"
+            src="./assets/images/room3.jpg"
             alt="Room image"
           />
           <div class="offerRoomSection__room__bigContainer">
@@ -435,7 +435,7 @@
                 <div class="amenitiesSection__container__subcontainer">
                   <img
                     class="amenitiesSection__container__subcontainer__img"
-                    src="./resources/assets/icons/1amenity-airconditioning.png"
+                    src="./assets/icons/1amenity-airconditioning.png"
                     alt="Amenity icon"
                   />
                   <p class="amenitiesSection__container__subcontainer__text">
@@ -445,7 +445,7 @@
                 <div class="amenitiesSection__container__subcontainer">
                   <img
                     class="amenitiesSection__container__subcontainer__img"
-                    src="./resources/assets/icons/2amenity-wifi.png"
+                    src="./assets/icons/2amenity-wifi.png"
                     alt="Amenity icon"
                   />
                   <p class="amenitiesSection__container__subcontainer__text">
@@ -455,7 +455,7 @@
                 <div class="amenitiesSection__container__subcontainer">
                   <img
                     class="amenitiesSection__container__subcontainer__img"
-                    src="./resources/assets/icons/3amenity-breakfast.png"
+                    src="./assets/icons/3amenity-breakfast.png"
                     alt="Amenity icon"
                   />
                   <p class="amenitiesSection__container__subcontainer__text">
@@ -465,7 +465,7 @@
                 <div class="amenitiesSection__container__subcontainer">
                   <img
                     class="amenitiesSection__container__subcontainer__img"
-                    src="./resources/assets/icons/4amenity-kitchen.png"
+                    src="./assets/icons/4amenity-kitchen.png"
                     alt="Amenity icon"
                   />
                   <p class="amenitiesSection__container__subcontainer__text">
@@ -475,7 +475,7 @@
                 <div class="amenitiesSection__container__subcontainer">
                   <img
                     class="amenitiesSection__container__subcontainer__img"
-                    src="./resources/assets/icons/5amenity-cleaning.png"
+                    src="./assets/icons/5amenity-cleaning.png"
                     alt="Amenity icon"
                   />
                   <p class="amenitiesSection__container__subcontainer__text">
@@ -485,7 +485,7 @@
                 <div class="amenitiesSection__container__subcontainer">
                   <img
                     class="amenitiesSection__container__subcontainer__img"
-                    src="./resources/assets/icons/6amenity-shower.png"
+                    src="./assets/icons/6amenity-shower.png"
                     alt="Amenity icon"
                   />
                   <p class="amenitiesSection__container__subcontainer__text">
@@ -495,7 +495,7 @@
                 <div class="amenitiesSection__container__subcontainer">
                   <img
                     class="amenitiesSection__container__subcontainer__img"
-                    src="./resources/assets/icons/7amenity-grocery.png"
+                    src="./assets/icons/7amenity-grocery.png"
                     alt="Amenity icon"
                   />
                   <p class="amenitiesSection__container__subcontainer__text">
@@ -505,7 +505,7 @@
                 <div class="amenitiesSection__container__subcontainer">
                   <img
                     class="amenitiesSection__container__subcontainer__img"
-                    src="./resources/assets/icons/8amenity-bed.png"
+                    src="./assets/icons/8amenity-bed.png"
                     alt="Amenity icon"
                   />
                   <p class="amenitiesSection__container__subcontainer__text">
@@ -515,7 +515,7 @@
                 <div class="amenitiesSection__container__subcontainer">
                   <img
                     class="amenitiesSection__container__subcontainer__img"
-                    src="./resources/assets/icons/9amenity-shop.png"
+                    src="./assets/icons/9amenity-shop.png"
                     alt="Amenity icon"
                   />
                   <p class="amenitiesSection__container__subcontainer__text">
@@ -525,7 +525,7 @@
                 <div class="amenitiesSection__container__subcontainer">
                   <img
                     class="amenitiesSection__container__subcontainer__img"
-                    src="./resources/assets/icons/10amenity-towels.png"
+                    src="./assets/icons/10amenity-towels.png"
                     alt="Amenity icon"
                   />
                   <p class="amenitiesSection__container__subcontainer__text">
@@ -550,7 +550,7 @@
           </div>
           <img
             class="offerRoomSection__room__img"
-            src="./resources/assets/images/room4.jpeg"
+            src="./assets/images/room4.jpeg"
             alt="Room image"
           />
           <div class="offerRoomSection__room__bigContainer">
@@ -602,7 +602,7 @@
                 <div class="amenitiesSection__container__subcontainer">
                   <img
                     class="amenitiesSection__container__subcontainer__img"
-                    src="./resources/assets/icons/1amenity-airconditioning.png"
+                    src="./assets/icons/1amenity-airconditioning.png"
                     alt="Amenity icon"
                   />
                   <p class="amenitiesSection__container__subcontainer__text">
@@ -612,7 +612,7 @@
                 <div class="amenitiesSection__container__subcontainer">
                   <img
                     class="amenitiesSection__container__subcontainer__img"
-                    src="./resources/assets/icons/2amenity-wifi.png"
+                    src="./assets/icons/2amenity-wifi.png"
                     alt="Amenity icon"
                   />
                   <p class="amenitiesSection__container__subcontainer__text">
@@ -622,7 +622,7 @@
                 <div class="amenitiesSection__container__subcontainer">
                   <img
                     class="amenitiesSection__container__subcontainer__img"
-                    src="./resources/assets/icons/3amenity-breakfast.png"
+                    src="./assets/icons/3amenity-breakfast.png"
                     alt="Amenity icon"
                   />
                   <p class="amenitiesSection__container__subcontainer__text">
@@ -632,7 +632,7 @@
                 <div class="amenitiesSection__container__subcontainer">
                   <img
                     class="amenitiesSection__container__subcontainer__img"
-                    src="./resources/assets/icons/4amenity-kitchen.png"
+                    src="./assets/icons/4amenity-kitchen.png"
                     alt="Amenity icon"
                   />
                   <p class="amenitiesSection__container__subcontainer__text">
@@ -642,7 +642,7 @@
                 <div class="amenitiesSection__container__subcontainer">
                   <img
                     class="amenitiesSection__container__subcontainer__img"
-                    src="./resources/assets/icons/5amenity-cleaning.png"
+                    src="./assets/icons/5amenity-cleaning.png"
                     alt="Amenity icon"
                   />
                   <p class="amenitiesSection__container__subcontainer__text">
@@ -652,7 +652,7 @@
                 <div class="amenitiesSection__container__subcontainer">
                   <img
                     class="amenitiesSection__container__subcontainer__img"
-                    src="./resources/assets/icons/6amenity-shower.png"
+                    src="./assets/icons/6amenity-shower.png"
                     alt="Amenity icon"
                   />
                   <p class="amenitiesSection__container__subcontainer__text">
@@ -662,7 +662,7 @@
                 <div class="amenitiesSection__container__subcontainer">
                   <img
                     class="amenitiesSection__container__subcontainer__img"
-                    src="./resources/assets/icons/7amenity-grocery.png"
+                    src="./assets/icons/7amenity-grocery.png"
                     alt="Amenity icon"
                   />
                   <p class="amenitiesSection__container__subcontainer__text">
@@ -672,7 +672,7 @@
                 <div class="amenitiesSection__container__subcontainer">
                   <img
                     class="amenitiesSection__container__subcontainer__img"
-                    src="./resources/assets/icons/8amenity-bed.png"
+                    src="./assets/icons/8amenity-bed.png"
                     alt="Amenity icon"
                   />
                   <p class="amenitiesSection__container__subcontainer__text">
@@ -682,7 +682,7 @@
                 <div class="amenitiesSection__container__subcontainer">
                   <img
                     class="amenitiesSection__container__subcontainer__img"
-                    src="./resources/assets/icons/9amenity-shop.png"
+                    src="./assets/icons/9amenity-shop.png"
                     alt="Amenity icon"
                   />
                   <p class="amenitiesSection__container__subcontainer__text">
@@ -692,7 +692,7 @@
                 <div class="amenitiesSection__container__subcontainer">
                   <img
                     class="amenitiesSection__container__subcontainer__img"
-                    src="./resources/assets/icons/10amenity-towels.png"
+                    src="./assets/icons/10amenity-towels.png"
                     alt="Amenity icon"
                   />
                   <p class="amenitiesSection__container__subcontainer__text">
@@ -717,12 +717,12 @@
               <div style="position: relative">
                 <img
                   class="roomSlider__slides--extras"
-                  src="./resources/assets/images/roomExtras.png"
+                  src="./assets/images/roomExtras.png"
                   alt="Room extras"
                 />
                 <img
                   class="roomSlider__slides--roomImg"
-                  src="./resources/assets/images/room1.jpg"
+                  src="./assets/images/room1.jpg"
                   alt="Hotel room"
                 />
                 <h1 class="roomSlider__slides--title">Minimal Duplex Room</h1>
@@ -745,12 +745,12 @@
               <div style="position: relative">
                 <img
                   class="roomSlider__slides--extras"
-                  src="./resources/assets/images/roomExtras.png"
+                  src="./assets/images/roomExtras.png"
                   alt="Room extras"
                 />
                 <img
                   class="roomSlider__slides--roomImg"
-                  src="./resources/assets/images/room2.jpg"
+                  src="./assets/images/room2.jpg"
                   alt="Hotel room"
                 />
                 <h1 class="roomSlider__slides--title">Minimal Duplex Room</h1>
@@ -773,12 +773,12 @@
               <div style="position: relative">
                 <img
                   class="roomSlider__slides--extras"
-                  src="./resources/assets/images/roomExtras.png"
+                  src="./assets/images/roomExtras.png"
                   alt="Room extras"
                 />
                 <img
                   class="roomSlider__slides--roomImg"
-                  src="./resources/assets/images/room3.jpg"
+                  src="./assets/images/room3.jpg"
                   alt="Hotel room"
                 />
                 <h1 class="roomSlider__slides--title">Minimal Duplex Room</h1>
@@ -801,12 +801,12 @@
               <div style="position: relative">
                 <img
                   class="roomSlider__slides--extras"
-                  src="./resources/assets/images/roomExtras.png"
+                  src="./assets/images/roomExtras.png"
                   alt="Room extras"
                 />
                 <img
                   class="roomSlider__slides--roomImg"
-                  src="./resources/assets/images/room4.jpeg"
+                  src="./assets/images/room4.jpeg"
                   alt="Hotel room"
                 />
                 <h1 class="roomSlider__slides--title">Minimal Duplex Room</h1>
@@ -835,12 +835,12 @@
             <div style="position: relative">
               <img
                 class="popularRoomsSection__swiper__slide__extras"
-                src="./resources/assets/images/roomExtras.png"
+                src="./assets/images/roomExtras.png"
                 alt="Room extras"
               />
               <img
                 class="popularRoomsSection__swiper__slide__roomImg"
-                src="./resources/assets/images/room1.jpg"
+                src="./assets/images/room1.jpg"
                 alt="Hotel room"
               />
               <h1 class="popularRoomsSection__swiper__slide__title">
@@ -869,12 +869,12 @@
             <div style="position: relative">
               <img
                 class="popularRoomsSection__swiper__slide__extras"
-                src="./resources/assets/images/roomExtras.png"
+                src="./assets/images/roomExtras.png"
                 alt="Room extras"
               />
               <img
                 class="popularRoomsSection__swiper__slide__roomImg"
-                src="./resources/assets/images/room2.jpg"
+                src="./assets/images/room2.jpg"
                 alt="Hotel room"
               />
               <h1 class="popularRoomsSection__swiper__slide__title">
@@ -903,12 +903,12 @@
             <div style="position: relative">
               <img
                 class="popularRoomsSection__swiper__slide__extras"
-                src="./resources/assets/images/roomExtras.png"
+                src="./assets/images/roomExtras.png"
                 alt="Room extras"
               />
               <img
                 class="popularRoomsSection__swiper__slide__roomImg"
-                src="./resources/assets/images/room3.jpg"
+                src="./assets/images/room3.jpg"
                 alt="Hotel room"
               />
               <h1 class="popularRoomsSection__swiper__slide__title">
@@ -944,8 +944,8 @@
 
     @section('scripts')
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script type="module" src="./resources/js/index.js"></script>
-    <script type="module" src="./resources/js/mobile-menu.js"></script>
+    <script type="module" src="./js/index.js"></script>
+    <script type="module" src="./js/mobile-menu.js"></script>
     @endsection
 </body>
 
