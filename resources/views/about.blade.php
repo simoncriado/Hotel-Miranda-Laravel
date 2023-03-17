@@ -1,19 +1,5 @@
 @extends('layout')
 
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    @section('head')
-        @parent
-    @endsection
-</head>
-
-<body>
-    @section('topbar')
-        @parent
-    @endsection
-
     @section('content')
     <main>
       <!-- Subheader Section -->
@@ -544,15 +530,8 @@
     </main>
     @endsection
 
-@section('footer')
-    @parent
-@endsection
-
 @section('scripts')
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script type="module" src="{{asset("js/index.js")}}"></script>
-    <script type="module" src="{{asset("js/mobile-menu.js")}}></script>
-    @endsection
-</body>
-
-</html>
+<script type="module" src="{{asset("js/mobile-menu.js")}}></script>
+@endsection

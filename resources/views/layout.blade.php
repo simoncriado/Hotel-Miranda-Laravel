@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-    @section('head')
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,11 +20,9 @@
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
     <title>Hotel Miranda</title>
-    @show
 </head>
 
 <body>
-@section('navbar')
 <header class="header">
       <nav class="nav">
         <div class="nav__container">
@@ -33,7 +30,7 @@
             <div class="nav__container__menu nav__container__menu--burger">
               <img
                 id="mobileMenuBurguer"
-                src="./assets/icons/menu.svg"
+                src="/assets/icons/menu.svg"
                 alt="Menu icon"
               />
             </div>
@@ -43,10 +40,10 @@
               >
                 <span>H</span>
               </div>
-              <a href="{{ url('/index') }}">
+              <a href="{{ url('/') }}">
                 <img
                   class="nav__container__menu--logo nav__container__menu--logo--title"
-                  src="./assets/icons/Hotel Miranda.svg"
+                  src="/assets/icons/Hotel Miranda.svg"
                   alt="Hotel Title"
                 />
               </a>
@@ -62,12 +59,12 @@
             <div class="nav__container nav__container__functionalities">
               <img
                 class="nav__container__functionalities--person"
-                src="./assets/icons/person.png"
+                src="/assets/icons/person.png"
                 alt="User icon"
               />
               <img
                 class="nav__container__functionalities--search"
-                src="./assets/icons/search.png"
+                src="/assets/icons/search.png"
                 alt="Search icon"
               />
             </div>
@@ -75,19 +72,17 @@
         </div>
       </nav>
     </header>
-    @show
 
     @section('content')
     @show
 
-    @section('footer')
     <footer class="footer">
       <div class="footer__container1">
         <div class="footer__container1__subcontainer1">
           <div class="footer__container1__subcontainer1__header">
             <h1>H</h1>
             <img
-              src="./assets/icons/Hotel Miranda.svg"
+              src="/assets/icons/Hotel Miranda.svg"
               alt="Hotel name"
             />
           </div>
@@ -213,7 +208,7 @@
             <div class="footer__container1__subcontainer3__contact__one">
               <img
                 class="footer__container1__subcontainer3__contact__one__icon"
-                src="./assets/icons/contactIcon1.png"
+                src="/assets/icons/contactIcon1.png"
                 alt="Contact icon"
               />
               <div
@@ -234,7 +229,7 @@
             <div class="footer__container1__subcontainer3__contact__one">
               <img
                 class="footer__container1__subcontainer3__contact__one__icon"
-                src="./assets/icons/contactIcon2.png"
+                src="/assets/icons/contactIcon2.png"
                 alt="Contact icon"
               />
               <div
@@ -255,7 +250,7 @@
             <div class="footer__container1__subcontainer3__contact__one">
               <img
                 class="footer__container1__subcontainer3__contact__one__icon"
-                src="./assets/icons/contactIcon3.png"
+                src="/assets/icons/contactIcon3.png"
                 alt="Contact icon"
               />
               <div
@@ -288,7 +283,6 @@
         </div>
       </div>
     </footer>
-    @show
 
     @section('scripts')
     @show
